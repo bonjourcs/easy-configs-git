@@ -1,0 +1,17 @@
+[user]
+	name = your_name_here
+	email = your_email_here
+[alias]
+	sb = submodule
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	# 撤销暂存，低版本的git需要使用 reset HEAD
+	unstage = restore --staged
+	# 还原文件，低版本的git需要使用 checkout --
+	rst = restore
+	rlg = reflog
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+[credential]
+	helper = store
